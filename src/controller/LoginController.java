@@ -25,7 +25,7 @@ public class LoginController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/loginView.jsp");
+	RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WebContent/WEB-INF/views/loginView.jsp");
 	rd.forward(request, response);
 	}
 
@@ -33,7 +33,6 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	/*	String email = request.getParameter("email"); //  get the email value from the jsp/html page
 		String password = request.getParameter("password"); //  get the password value from the jsp/html page
-
 		ValidateUser validateUser = new ValidateUser();
 		if(validateUser.validate(email,password)) {
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/blogView.jsp");
